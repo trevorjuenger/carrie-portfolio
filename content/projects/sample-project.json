@@ -1,0 +1,11 @@
+{
+  "title": "Sample Project",
+  "slug": "sample-project",
+  "medium": "Photography",
+  "year": "2025",
+  "summary": "A placeholder project showing how portfolio entries can be structured for automatic page generation.",
+  "coverImage": "",
+  "images": [],
+  "videoUrl": "",
+  "featured": true
+}

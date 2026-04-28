@@ -1,0 +1,48 @@
+{
+  "title": "Photography",
+  "slug": "photography",
+  "medium": "Photography",
+  "year": "Selected Works",
+  "summary": "A selection of photographic works presented in a clean, conventional portfolio format.",
+  "coverImage": "assets/images/photography/web/partners.jpg",
+  "images": [
+    {
+      "file": "assets/images/photography/web/partners.jpg",
+      "thumb": "assets/images/photography/thumbs/partners.jpg",
+      "title": "Partners",
+      "orientation": "landscape"
+    },
+    {
+      "file": "assets/images/photography/web/still life.png",
+      "thumb": "assets/images/photography/thumbs/still life.png",
+      "title": "Still Life",
+      "orientation": "square"
+    },
+    {
+      "file": "assets/images/photography/web/kiss 14x20.png",
+      "thumb": "assets/images/photography/thumbs/kiss 14x20.png",
+      "title": "Kiss",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/images/photography/web/grampires ashes.png",
+      "thumb": "assets/images/photography/thumbs/grampires ashes.png",
+      "title": "Grampires Ashes",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/images/photography/web/gandalf3.png",
+      "thumb": "assets/images/photography/thumbs/gandalf3.png",
+      "title": "Gandalf",
+      "orientation": "landscape"
+    },
+    {
+      "file": "assets/images/photography/web/catdone3.png",
+      "thumb": "assets/images/photography/thumbs/catdone3.png",
+      "title": "Catdone",
+      "orientation": "portrait"
+    }
+  ],
+  "videoUrl": "",
+  "featured": true
+}

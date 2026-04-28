@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrie Juenger, Artist</title>
+  <style>
+    :root {
+      --bg: #f6f2eb;
+      --paper: #fffdf9;
+      --ink: #1c1b19;
+      --muted: #6d655d;
+      --line: #ddd3c7;
+      --accent: #7d6656;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { width: 100%; display: block; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 253, 249, 0.93);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+      z-index: 20;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+    .brand {
+      font-size: 1.25rem;
+      letter-spacing: .02em;
+      font-weight: 500;
+    }
+    nav a {
+      margin-left: 24px;
+      color: var(--muted);
+      font-size: .98rem;
+    }
+    .hero {
+      padding: 78px 0 38px;
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 36px;
+      align-items: center;
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      font-size: .73rem;
+      color: var(--muted);
+    }
+    h1 {
+      font-size: clamp(2.7rem, 6vw, 5rem);
+      line-height: .98;
+      margin: 10px 0 18px;
+      font-weight: 500;
+    }
+    .hero p {
+      max-width: 36rem;
+      font-size: 1.08rem;
+      color: #3b3733;
+    }
+    .hero-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 18px;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 11px 16px;
+      background: var(--ink);
+      color: var(--paper);
+      border: 1px solid var(--ink);
+    }
+    .section {
+      padding: 26px 0 62px;
+    }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: end;
+      margin-bottom: 22px;
+    }
+    h2 {
+      margin: 0;
+      font-size: 1.95rem;
+      font-weight: 500;
+    }
+    .muted { color: var(--muted); }
+    .hero-image {
+      border: 1px solid var(--line);
+      background: var(--paper);
+      padding: 14px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 4;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      overflow: hidden;
+    }
+    .card.wide { grid-column: span 8; }
+    .card.tall { grid-column: span 4; }
+    .meta {
+      padding: 13px 15px 16px;
+    }
+    .meta h3 {
+      margin: 0 0 4px;
+      font-size: 1.04rem;
+      font-weight: 500;
+    }
+    .meta p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+    .about {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 26px;
+      align-items: start;
+    }
+    .about-box {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 22px;
+    }
+    .placeholder {
+      aspect-ratio: 4 / 5;
+      background: linear-gradient(135deg, #d7cec3, #aa9c8a);
+      border: 1px solid var(--line);
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      padding: 26px 0 48px;
+      font-size: .95rem;
+    }
+    @media (max-width: 900px) {
+      .hero, .about { grid-template-columns: 1fr; }
+      .card, .card.wide, .card.tall { grid-column: span 12; }
+      nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">Carrie Juenger</div>
+      <nav>
+        <a href="#photography">Photography</a>
+        <a href="#video">Video</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Photography, Mixed Media, Video</div>
+        <h1>Conventional, clean, and calm enough to let the work speak.</h1>
+        <p>
+          This version leans gallery-friendly and readable, with large images, restrained typography,
+          and a straightforward structure for selected work, video, biography, and future CV materials.
+        </p>
+        <a class="button" href="#photography">View photography</a>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/photography/web/partners.jpg" alt="Partners" />
+      </div>
+    </section>
+
+    <section id="photography" class="section">
+      <div class="section-head">
+        <h2>Photography</h2>
+        <div class="muted">Selected works, early organization pass</div>
+      </div>
+      <div class="gallery">
+        <article class="card wide">
+          <img src="assets/images/photography/web/partners.jpg" alt="Partners" />
+          <div class="meta"><h3>Partners</h3><p>Photography</p></div>
+        </article>
+        <article class="card tall">
+          <img src="assets/images/photography/web/kiss 14x20.png" alt="Kiss" />
+          <div class="meta"><h3>Kiss</h3><p>Photography</p></div>
+        </article>
+        <article class="card tall">
+          <img src="assets/images/photography/web/grampires ashes.png" alt="Grampires Ashes" />
+          <div class="meta"><h3>Grampires Ashes</h3><p>Photography</p></div>
+        </article>
+        <article class="card wide">
+          <img src="assets/images/photography/web/still life.png" alt="Still Life" />
+          <div class="meta"><h3>Still Life</h3><p>Photography</p></div>
+        </article>
+        <article class="card wide">
+          <img src="assets/images/photography/web/gandalf3.png" alt="Gandalf" />
+          <div class="meta"><h3>Gandalf</h3><p>Photography</p></div>
+        </article>
+        <article class="card tall">
+          <img src="assets/images/photography/web/catdone3.png" alt="Catdone" />
+          <div class="meta"><h3>Catdone</h3><p>Photography</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="video" class="section">
+      <div class="section-head">
+        <h2>Video</h2>
+        <div class="muted">Placeholder for embeds, stills, and screening details</div>
+      </div>
+      <div class="about">
+        <div class="placeholder"></div>
+        <div class="about-box">
+          <p>
+            This section will become a proper video page or series of project pages with Vimeo embeds,
+            still frames, durations, and concise project notes.
+          </p>
+          <p>
+            For now, I’m keeping the template clean and conventional so we can layer in work without wrecking the aesthetic.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-head">
+        <h2>About</h2>
+      </div>
+      <div class="about">
+        <div class="placeholder"></div>
+        <div class="about-box">
+          <p>
+            Carrie Juenger is a St. Louis-based artist working across photography, mixed media, and moving image.
+            This text is placeholder copy for now, but the structure is ready for a short bio, artist statement,
+            CV link, and contact details.
+          </p>
+          <p>
+            The long-term goal is simple: Carrie can message the website gremlin, and the site stays current without anybody opening cursed code files.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">Carrie Juenger · contact placeholder · GitHub Pages draft</div>
+  </footer>
+</body>
+</html>
