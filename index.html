@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Carrie Juenger, Artist</title>
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/images/branding/carriejuengerlogo-mark-512.png" />
   <style>
     :root {
       --bg: #f6f2eb;
@@ -39,11 +40,17 @@
       justify-content: space-between;
       align-items: center;
       padding: 18px 0;
+      gap: 24px;
     }
     .brand {
-      font-size: 1.25rem;
-      letter-spacing: .02em;
-      font-weight: 500;
+      display: flex;
+      align-items: center;
+      max-width: 320px;
+    }
+    .brand img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
     nav a {
       margin-left: 24px;
@@ -166,7 +173,9 @@
 <body>
   <header>
     <div class="wrap nav">
-      <div class="brand">Carrie Juenger</div>
+      <div class="brand">
+        <img src="assets/images/branding/carriejuengerlogo-dark.png" alt="Carrie Juenger" />
+      </div>
       <nav>
         <a href="#photography">Photography</a>
         <a href="#video">Video</a>
