@@ -128,38 +128,15 @@
       overflow: hidden;
     }
     .collage-card {
-      min-height: 250px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
     }
-    .collage-tile {
-      min-height: 170px;
-      padding: 18px;
-      display: flex;
-      align-items: end;
-      color: var(--paper);
-      font-size: 1.15rem;
-      line-height: 1.15;
-      letter-spacing: 0.01em;
-      background:
-        linear-gradient(135deg, rgba(28, 27, 25, 0.08), rgba(28, 27, 25, 0.56)),
-        linear-gradient(135deg, #d7c4b5, #846755);
-    }
-    .collage-card:nth-child(3n + 1) .collage-tile {
-      background:
-        linear-gradient(135deg, rgba(28, 27, 25, 0.08), rgba(28, 27, 25, 0.54)),
-        linear-gradient(135deg, #d8b4a2, #6f4941);
-    }
-    .collage-card:nth-child(3n + 2) .collage-tile {
-      background:
-        linear-gradient(135deg, rgba(28, 27, 25, 0.08), rgba(28, 27, 25, 0.52)),
-        linear-gradient(135deg, #b9c3a7, #627055);
-    }
-    .collage-card:nth-child(3n) .collage-tile {
-      background:
-        linear-gradient(135deg, rgba(28, 27, 25, 0.08), rgba(28, 27, 25, 0.58)),
-        linear-gradient(135deg, #b9a8c8, #6f587f);
+    .collage-card img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      display: block;
+      background: var(--paper);
     }
     .card.wide { grid-column: span 8; }
     .card.tall { grid-column: span 4; }
@@ -274,29 +251,34 @@
     <section id="collage" class="section">
       <div class="section-head">
         <h2>Collage</h2>
-        <div class="muted">Mixed media works, organized for later image swaps</div>
+        <div class="muted">Mixed media works from the FireWire archive</div>
       </div>
       <div class="gallery collage-grid">
-        <article class="card collage-card"><div class="collage-tile">Chillaxin in Hell</div><div class="meta"><h3>Chillaxin in Hell</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">Cat with Roses</div><div class="meta"><h3>Cat with Roses</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">City Litter Vol. 2</div><div class="meta"><h3>City Litter Vol. 2</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">Coyote Flyer Free</div><div class="meta"><h3>Coyote Flyer Free</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">Graveside Chat</div><div class="meta"><h3>Graveside Chat</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">Horse Pattern Green 2016</div><div class="meta"><h3>Horse Pattern Green 2016</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">Jaque Custeau</div><div class="meta"><h3>Jaque Custeau</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">Jewish Couple at a Cross Burning</div><div class="meta"><h3>Jewish Couple at a Cross Burning</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">Looks Like Gator Makes Meow</div><div class="meta"><h3>Looks Like Gator Makes Meow</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">Omg Let's Do That</div><div class="meta"><h3>Omg Let's Do That</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">Psychic Powers</div><div class="meta"><h3>Psychic Powers</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">Rich Bitch</div><div class="meta"><h3>Rich Bitch</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">Satan's Lap Cat</div><div class="meta"><h3>Satan's Lap Cat</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">Tara 1</div><div class="meta"><h3>Tara 1</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">Tara 2</div><div class="meta"><h3>Tara 2</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">Toothpaste 1-5</div><div class="meta"><h3>Toothpaste 1-5</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">Trans Stamp 1</div><div class="meta"><h3>Trans Stamp 1</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">Untitled Collage 2013</div><div class="meta"><h3>Untitled Collage 2013</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">Untitled Collage 2015</div><div class="meta"><h3>Untitled Collage 2015</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><div class="collage-tile">Untitled Collage 2016</div><div class="meta"><h3>Untitled Collage 2016</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/chilaxin-in-hell-2016-collage.jpeg" alt="Chillaxin in Hell" loading="lazy" decoding="async" /><div class="meta"><h3>Chillaxin in Hell</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/cat-with-roses-2016.jpeg" alt="Cat with Roses" loading="lazy" decoding="async" /><div class="meta"><h3>Cat with Roses</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/city-litter-volume-2-collage-2015.jpeg" alt="City Litter Vol. 2" loading="lazy" decoding="async" /><div class="meta"><h3>City Litter Vol. 2</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/coyote-flyer-free-screening-2014.jpeg" alt="Coyote Flyer Free" loading="lazy" decoding="async" /><div class="meta"><h3>Coyote Flyer Free</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/graveside-chat-2015.jpeg" alt="Graveside Chat" loading="lazy" decoding="async" /><div class="meta"><h3>Graveside Chat</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/horse-pattern-green-2016.jpeg" alt="Horse Pattern Green 2016" loading="lazy" decoding="async" /><div class="meta"><h3>Horse Pattern Green 2016</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/jaque-custeau-2015.jpeg" alt="Jaque Custeau" loading="lazy" decoding="async" /><div class="meta"><h3>Jaque Custeau</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/jewish-couple-at-cross-burning-2013-collage.jpeg" alt="Jewish Couple at a Cross Burning" loading="lazy" decoding="async" /><div class="meta"><h3>Jewish Couple at a Cross Burning</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/looks-like-gator-makes-meow-2015.jpeg" alt="Looks Like Gator Makes Meow" loading="lazy" decoding="async" /><div class="meta"><h3>Looks Like Gator Makes Meow</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/omg-let-s-do-that-2016.jpeg" alt="Omg Let's Do That" loading="lazy" decoding="async" /><div class="meta"><h3>Omg Let's Do That</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/psychic-powers-2015.jpeg" alt="Psychic Powers" loading="lazy" decoding="async" /><div class="meta"><h3>Psychic Powers</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/rich-bitch-2013.jpeg" alt="Rich Bitch 2013" loading="lazy" decoding="async" /><div class="meta"><h3>Rich Bitch 2013</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/rich-bitch-2016.jpeg" alt="Rich Bitch 2016" loading="lazy" decoding="async" /><div class="meta"><h3>Rich Bitch 2016</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/satan-s-lapcat-2016.jpeg" alt="Satan's Lap Cat" loading="lazy" decoding="async" /><div class="meta"><h3>Satan's Lap Cat</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/tara-2015.jpeg" alt="Tara 2015" loading="lazy" decoding="async" /><div class="meta"><h3>Tara 2015</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/tara-2016.jpeg" alt="Tara 2016" loading="lazy" decoding="async" /><div class="meta"><h3>Tara 2016</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/toothpaste-1-2016.jpeg" alt="Toothpaste 1" loading="lazy" decoding="async" /><div class="meta"><h3>Toothpaste 1</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/toothpaste-2-2016.jpeg" alt="Toothpaste 2" loading="lazy" decoding="async" /><div class="meta"><h3>Toothpaste 2</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/toothpaste-3-2015.jpeg" alt="Toothpaste 3" loading="lazy" decoding="async" /><div class="meta"><h3>Toothpaste 3</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/toothpaste-4-2016.jpeg" alt="Toothpaste 4" loading="lazy" decoding="async" /><div class="meta"><h3>Toothpaste 4</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/toothpaste-5-2016.jpeg" alt="Toothpaste 5" loading="lazy" decoding="async" /><div class="meta"><h3>Toothpaste 5</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/trans-stamp-1-2013.jpeg" alt="Trans Stamp 1" loading="lazy" decoding="async" /><div class="meta"><h3>Trans Stamp 1</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/untitled-collage-2013.jpeg" alt="Untitled Collage 2013" loading="lazy" decoding="async" /><div class="meta"><h3>Untitled Collage 2013</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/untitled-collage-2015.jpeg" alt="Untitled Collage 2015" loading="lazy" decoding="async" /><div class="meta"><h3>Untitled Collage 2015</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/untitled-collage-2016.jpeg" alt="Untitled Collage 2016" loading="lazy" decoding="async" /><div class="meta"><h3>Untitled Collage 2016</h3><p>Collage</p></div></article>
       </div>
     </section>
 
