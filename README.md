@@ -4,7 +4,7 @@ Conventional portfolio site for Carrie Juenger, built for GitHub Pages with a si
 
 ## Goals
 - Clean, conventional, gallery-friendly presentation
-- Easy updates for photography, mixed media, and video
+- Easy updates for photography, collage, mixed media, and video
 - Simple publishing path
 - Structured content so Mori can update the site from chat requests
 
