@@ -36,12 +36,6 @@
       "title": "Gandalf",
       "orientation": "landscape"
     },
-    {
-      "file": "assets/images/photography/web/catdone3.png",
-      "thumb": "assets/images/photography/thumbs/catdone3.png",
-      "title": "Catdone",
-      "orientation": "portrait"
-    }
   ],
   "videoUrl": "",
   "featured": true
