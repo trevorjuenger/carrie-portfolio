@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Carrie Juenger is a multidisciplinary conceptual artist working out of Southern Illinois." />
   <meta property="og:title" content="Carrie Juenger, Artist" />
-  <meta property="og:description" content="Photography, collage, mixed media, and moving image by Carrie Juenger." />
+  <meta property="og:description" content="Photography, collage, installation, and moving image by Carrie Juenger." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://trevorjuenger.github.io/carrie-portfolio/" />
   <meta property="og:image" content="https://trevorjuenger.github.io/carrie-portfolio/assets/images/meta/still-life-share.png" />
   <meta property="og:image:alt" content="Still Life" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Carrie Juenger, Artist" />
-  <meta name="twitter:description" content="Photography, collage, mixed media, and moving image by Carrie Juenger." />
+  <meta name="twitter:description" content="Photography, collage, installation, and moving image by Carrie Juenger." />
   <meta name="twitter:image" content="https://trevorjuenger.github.io/carrie-portfolio/assets/images/meta/still-life-share.png" />
   <title>Carrie Juenger, Artist</title>
   <link rel="icon" type="image/svg+xml" href="assets/images/branding/inverted-cross-favicon.svg" />
@@ -75,22 +75,19 @@
       gap: 36px;
       align-items: center;
     }
-    .eyebrow {
-      text-transform: uppercase;
-      letter-spacing: .14em;
-      font-size: .73rem;
+    .hero > * { min-width: 0; }
+    .hero-quote { margin: 0; max-width: 38rem; }
+    .hero-quote p {
+      margin: 0 0 18px;
+      font-size: clamp(2.4rem, 5.5vw, 4.8rem);
+      line-height: 1.03;
+      color: var(--ink);
+    }
+    .hero-quote cite {
+      display: block;
       color: var(--muted);
-    }
-    h1 {
-      font-size: clamp(2.7rem, 6vw, 5rem);
-      line-height: .98;
-      margin: 10px 0 18px;
-      font-weight: 500;
-    }
-    .hero p {
-      max-width: 36rem;
-      font-size: 1.08rem;
-      color: #3b3733;
+      font-size: 1rem;
+      font-style: normal;
     }
     .hero-card {
       background: var(--paper);
@@ -189,11 +186,11 @@
       display: block;
       border: 0;
     }
-    .placeholder {
-      aspect-ratio: 4 / 5;
-      background: linear-gradient(135deg, #d7cec3, #aa9c8a);
+    .video-still {
+      background: var(--paper);
       border: 1px solid var(--line);
     }
+    .video-still img { aspect-ratio: 1 / 1; object-fit: cover; }
     footer {
       border-top: 1px solid var(--line);
       color: var(--muted);
@@ -218,7 +215,8 @@
         <a href="bio.html">Bio</a>
         <a href="#photography">Photography</a>
         <a href="#collage">Collage</a>
-        <a href="#video">Video</a>
+        <a href="#installation">Installation</a>
+        <a href="#video">Video Work</a>
         <a href="#about">About</a>
         <a href="mailto:Carrie.juenger@gmail.com">Contact</a>
       </nav>
@@ -228,16 +226,14 @@
   <main class="wrap">
     <section class="hero">
       <div>
-        <div class="eyebrow">Photography, Collage, Mixed Media, Video</div>
-        <h1>Clean presentation, so the work can hit harder.</h1>
-        <p>
-          This version stays gallery-friendly and readable, with room for photography,
-          collage series, video, biography, and future CV materials.
-        </p>
-        <a class="button" href="bio.html">Read the full bio</a>
+        <blockquote class="hero-quote">
+          <p>&ldquo;What is dark within me, illumine.&rdquo;</p>
+          <cite>John Milton, <em>Paradise Lost</em></cite>
+        </blockquote>
+        <a class="button" href="bio.html">Full Bio</a>
       </div>
       <div class="hero-image">
-        <img src="assets/images/photography/web/partners.jpg" alt="Partners" />
+        <img src="assets/images/photography/web/partners.jpg" alt="Blood Pact" />
       </div>
     </section>
 
@@ -246,37 +242,29 @@
         <h2>Photography</h2>
       </div>
       <div class="gallery">
-        <article class="card wide">
-          <img src="assets/images/photography/web/partners.jpg" alt="Partners" />
-          <div class="meta"><h3>Partners</h3><p>Photography</p></div>
-        </article>
-        <article class="card wide">
-          <img src="assets/images/photography/web/making-spirits-bright-17.jpg" alt="Making Spirits Bright" loading="lazy" decoding="async" />
-          <div class="meta"><h3>Making Spirits Bright</h3><p>Photography</p></div>
+        <article class="card tall">
+          <img src="assets/images/photography/web/kiss 14x20.png" alt="Deep" />
+          <div class="meta"><h3>Deep</h3><p>Photography</p></div>
         </article>
         <article class="card tall">
-          <img src="assets/images/photography/web/kiss 14x20.png" alt="Kiss" />
-          <div class="meta"><h3>Kiss</h3><p>Photography</p></div>
-        </article>
-        <article class="card tall">
-          <img src="assets/images/photography/web/grampires ashes.png" alt="Grampires Ashes" />
-          <div class="meta"><h3>Grampires Ashes</h3><p>Photography</p></div>
+          <img src="assets/images/photography/web/grampires ashes.png" alt="Lamentation" />
+          <div class="meta"><h3>Lamentation</h3><p>Photography</p></div>
         </article>
         <article class="card wide">
-          <img src="assets/images/photography/web/still life.png" alt="Still Life" />
-          <div class="meta"><h3>Still Life</h3><p>Photography</p></div>
+          <img src="assets/images/photography/web/still life.png" alt="Feast of Saint Sebastian" />
+          <div class="meta"><h3>Feast of Saint Sebastian</h3><p>Photography</p></div>
         </article>
         <article class="card wide">
-          <img src="assets/images/photography/web/gandalf3.png" alt="Gandalf" />
-          <div class="meta"><h3>Gandalf</h3><p>Photography</p></div>
+          <img src="assets/images/photography/web/gandalf3.png" alt="Baby Boy" />
+          <div class="meta"><h3>Baby Boy</h3><p>Photography</p></div>
         </article>
         <article class="card tall">
-          <img src="assets/images/photography/web/cat9.png" alt="Cat 9" loading="lazy" decoding="async" />
-          <div class="meta"><h3>Cat 9</h3><p>Photography</p></div>
+          <img src="assets/images/photography/web/cat9.png" alt="Cream" loading="lazy" decoding="async" />
+          <div class="meta"><h3>Cream</h3><p>Photography</p></div>
         </article>
-        <article class="card tall">
-          <img src="assets/images/photography/web/small-entry.jpg" alt="Small Entry" loading="lazy" decoding="async" />
-          <div class="meta"><h3>Small Entry</h3><p>Photography</p></div>
+        <article class="card wide">
+          <img src="assets/images/photography/web/partners.jpg" alt="Blood Pact" loading="lazy" decoding="async" />
+          <div class="meta"><h3>Blood Pact</h3><p>Photography</p></div>
         </article>
       </div>
     </section>
@@ -284,40 +272,40 @@
     <section id="collage" class="section">
       <div class="section-head">
         <h2>Collage</h2>
-        <div class="muted">Mixed media works from the FireWire archive</div>
       </div>
       <div class="gallery collage-grid">
-        <article class="card collage-card"><img src="assets/images/collage/chilaxin-in-hell-2016-collage.jpeg" alt="Chillaxin in Hell" loading="lazy" decoding="async" /><div class="meta"><h3>Chillaxin in Hell</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/cat-with-roses-2016.jpeg" alt="Cat with Roses" loading="lazy" decoding="async" /><div class="meta"><h3>Cat with Roses</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/city-litter-volume-2-collage-2015.jpeg" alt="City Litter Vol. 2" loading="lazy" decoding="async" /><div class="meta"><h3>City Litter Vol. 2</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/coyote-flyer-free-screening-2014.jpeg" alt="Coyote Flyer Free" loading="lazy" decoding="async" /><div class="meta"><h3>Coyote Flyer Free</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/graveside-chat-2015.jpeg" alt="Graveside Chat" loading="lazy" decoding="async" /><div class="meta"><h3>Graveside Chat</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/horse-pattern-green-2016.jpeg" alt="Horse Pattern Green 2016" loading="lazy" decoding="async" /><div class="meta"><h3>Horse Pattern Green 2016</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/jaque-custeau-2015.jpeg" alt="Jaque Custeau" loading="lazy" decoding="async" /><div class="meta"><h3>Jaque Custeau</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/jewish-couple-at-cross-burning-2013-collage.jpeg" alt="Jewish Couple at a Cross Burning" loading="lazy" decoding="async" /><div class="meta"><h3>Jewish Couple at a Cross Burning</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/looks-like-gator-makes-meow-2015.jpeg" alt="Looks Like Gator Makes Meow" loading="lazy" decoding="async" /><div class="meta"><h3>Looks Like Gator Makes Meow</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/psychic-powers-2015.jpeg" alt="Psychic Powers" loading="lazy" decoding="async" /><div class="meta"><h3>Psychic Powers</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/rich-bitch-2013.jpeg" alt="Rich Bitch 2013" loading="lazy" decoding="async" /><div class="meta"><h3>Rich Bitch 2013</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/satan-s-lapcat-2016.jpeg" alt="Satan's Lap Cat" loading="lazy" decoding="async" /><div class="meta"><h3>Satan's Lap Cat</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/tara-2015.jpeg" alt="Tara 2015" loading="lazy" decoding="async" /><div class="meta"><h3>Tara 2015</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/tara-2016.jpeg" alt="Tara 2016" loading="lazy" decoding="async" /><div class="meta"><h3>Tara 2016</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/toothpaste-1-2016.jpeg" alt="Toothpaste 1" loading="lazy" decoding="async" /><div class="meta"><h3>Toothpaste 1</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/toothpaste-2-2016.jpeg" alt="Toothpaste 2" loading="lazy" decoding="async" /><div class="meta"><h3>Toothpaste 2</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/toothpaste-3-2015.jpeg" alt="Toothpaste 3" loading="lazy" decoding="async" /><div class="meta"><h3>Toothpaste 3</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/toothpaste-4-2016.jpeg" alt="Toothpaste 4" loading="lazy" decoding="async" /><div class="meta"><h3>Toothpaste 4</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/toothpaste-5-2016.jpeg" alt="Toothpaste 5" loading="lazy" decoding="async" /><div class="meta"><h3>Toothpaste 5</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/trans-stamp-1-2013.jpeg" alt="Trans Stamp 1" loading="lazy" decoding="async" /><div class="meta"><h3>Trans Stamp 1</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/untitled-collage-2013.jpeg" alt="Untitled Collage 2013" loading="lazy" decoding="async" /><div class="meta"><h3>Untitled Collage 2013</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/untitled-collage-2015.jpeg" alt="Untitled Collage 2015" loading="lazy" decoding="async" /><div class="meta"><h3>Untitled Collage 2015</h3><p>Collage</p></div></article>
-        <article class="card collage-card"><img src="assets/images/collage/untitled-collage-2016.jpeg" alt="Untitled Collage 2016" loading="lazy" decoding="async" /><div class="meta"><h3>Untitled Collage 2016</h3><p>Collage</p></div></article>
         <article class="card collage-card"><img src="assets/images/collage/woman-on-horse-2016-digital-collage.jpg" alt="Woman on Horse" loading="lazy" decoding="async" /><div class="meta"><h3>Woman on Horse</h3><p>Digital Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/chilaxin-in-hell-2016-collage.jpeg" alt="Untitled" loading="lazy" decoding="async" /><div class="meta"><h3>Untitled</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/cat-with-roses-2016.jpeg" alt="Cat with Roses" loading="lazy" decoding="async" /><div class="meta"><h3>Cat with Roses</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/coyote-flyer-free-screening-2014.jpeg" alt="Film Screening Flyer" loading="lazy" decoding="async" /><div class="meta"><h3>Film Screening Flyer</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/graveside-chat-2015.jpeg" alt="Graveyard Chat" loading="lazy" decoding="async" /><div class="meta"><h3>Graveyard Chat</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/jaque-custeau-2015.jpeg" alt="Jacques Cousteau" loading="lazy" decoding="async" /><div class="meta"><h3>Jacques Cousteau</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/jewish-couple-at-cross-burning-2013-collage.jpeg" alt="Untitled" loading="lazy" decoding="async" /><div class="meta"><h3>Untitled</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/looks-like-gator-makes-meow-2015.jpeg" alt="Looks Like Gator, Makes Meow" loading="lazy" decoding="async" /><div class="meta"><h3>Looks Like Gator, Makes Meow</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/psychic-powers-2015.jpeg" alt="Wild Summer" loading="lazy" decoding="async" /><div class="meta"><h3>Wild Summer</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/rich-bitch-2013.jpeg" alt="Rich Bitch" loading="lazy" decoding="async" /><div class="meta"><h3>Rich Bitch</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/satan-s-lapcat-2016.jpeg" alt="The Church" loading="lazy" decoding="async" /><div class="meta"><h3>The Church</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/tara-2015.jpeg" alt="I Should Have Known" loading="lazy" decoding="async" /><div class="meta"><h3>I Should Have Known</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/tara-2016.jpeg" alt="Tara" loading="lazy" decoding="async" /><div class="meta"><h3>Tara</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/toothpaste-3-2015.jpeg" alt="Dumpster Cat" loading="lazy" decoding="async" /><div class="meta"><h3>Dumpster Cat</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/trans-stamp-1-2013.jpeg" alt="Untitled" loading="lazy" decoding="async" /><div class="meta"><h3>Untitled</h3><p>Collage</p></div></article>
+        <article class="card collage-card"><img src="assets/images/collage/untitled-collage-2015.jpeg" alt="Untitled" loading="lazy" decoding="async" /><div class="meta"><h3>Untitled</h3><p>Collage</p></div></article>
+      </div>
+    </section>
+
+    <section id="installation" class="section">
+      <div class="section-head"><h2>Installation</h2></div>
+      <div class="gallery">
+        <article class="card wide">
+          <img src="assets/images/photography/web/making-spirits-bright-17.jpg" alt="Making Spirits Bright" loading="lazy" decoding="async" />
+          <div class="meta"><h3>Making Spirits Bright</h3><p>Installation</p></div>
+        </article>
       </div>
     </section>
 
     <section id="video" class="section">
       <div class="section-head">
-        <h2>Video</h2>
-        <div class="muted">Embedded Vimeo clips, no link-out nonsense</div>
+        <h2>Video Work</h2>
       </div>
       <div class="about">
         <div class="video-stack">
@@ -349,14 +337,10 @@
             ></iframe>
           </div>
         </div>
-        <div class="about-box">
-          <p>
-            This section will hold embedded Vimeo work with titles and short notes.
-          </p>
-          <p>
-            Add the next clips here and the page stays inside the site instead of shoving people off to Vimeo.
-          </p>
-        </div>
+        <article class="video-still">
+          <img src="assets/images/video/daddys-girl-still-2017.jpg" alt="Still from Daddy's Girl, 2017" loading="lazy" decoding="async" />
+          <div class="meta"><h3>Still from &ldquo;Daddy&rsquo;s Girl&rdquo; 2017</h3><p>Video still</p></div>
+        </article>
       </div>
     </section>
 
