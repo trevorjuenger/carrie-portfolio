@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Full biography and portrait gallery for Carrie Juenger." />
+  <meta name="description" content="Full artist biography for Carrie Juenger." />
   <meta property="og:title" content="Carrie Juenger | Bio" />
-  <meta property="og:description" content="A full artist biography and portrait gallery for Carrie Juenger." />
+  <meta property="og:description" content="A full artist biography for Carrie Juenger." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://trevorjuenger.github.io/carrie-portfolio/bio.html" />
   <meta property="og:image" content="https://trevorjuenger.github.io/carrie-portfolio/assets/images/bio/carrie-bio-portrait-glasses.jpg" />
   <meta property="og:image:alt" content="Carrie Juenger portrait" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Carrie Juenger | Bio" />
-  <meta name="twitter:description" content="A full artist biography and portrait gallery for Carrie Juenger." />
+  <meta name="twitter:description" content="A full artist biography for Carrie Juenger." />
   <meta name="twitter:image" content="https://trevorjuenger.github.io/carrie-portfolio/assets/images/bio/carrie-bio-portrait-glasses.jpg" />
   <title>Carrie Juenger | Bio</title>
   <link rel="icon" type="image/svg+xml" href="assets/images/branding/inverted-cross-favicon.svg" />
@@ -113,18 +113,15 @@
       border: 1px solid var(--line);
     }
     .hero-media {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
+      max-width: 460px;
+      justify-self: end;
     }
     .portrait {
+      margin: 0;
       background: var(--paper);
       border: 1px solid var(--line);
       overflow: hidden;
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05);
-    }
-    .portrait:first-child {
-      grid-column: 1 / -1;
     }
     .portrait img {
       aspect-ratio: 4 / 5;
@@ -148,10 +145,7 @@
     }
     .muted { color: var(--muted); }
     .bio-layout {
-      display: grid;
-      grid-template-columns: 1.05fr .95fr;
-      gap: 24px;
-      align-items: start;
+      max-width: 780px;
     }
     .bio-card {
       background: var(--paper);
@@ -163,39 +157,6 @@
       font-size: 1.02rem;
     }
     .bio-card p:last-child { margin-bottom: 0; }
-    .note {
-      color: var(--muted);
-      font-size: .95rem;
-      margin-top: 18px;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-    }
-    .card {
-      background: var(--paper);
-      border: 1px solid var(--line);
-      overflow: hidden;
-    }
-    .card img {
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-      object-position: center;
-    }
-    .meta {
-      padding: 12px 14px 14px;
-    }
-    .meta h3 {
-      margin: 0 0 4px;
-      font-size: 1rem;
-      font-weight: 500;
-    }
-    .meta p {
-      margin: 0;
-      color: var(--muted);
-      font-size: .93rem;
-    }
     footer {
       border-top: 1px solid var(--line);
       color: var(--muted);
@@ -203,10 +164,8 @@
       font-size: .95rem;
     }
     @media (max-width: 900px) {
-      .hero, .bio-layout { grid-template-columns: 1fr; }
-      .hero-media { grid-template-columns: 1fr; }
-      .portrait:first-child { grid-column: auto; }
-      .gallery { grid-template-columns: 1fr; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-media { max-width: none; justify-self: stretch; }
       nav { display: none; }
     }
   </style>
@@ -234,25 +193,16 @@
         <h1>Carrie Juenger</h1>
         <p class="lede">
           Carrie Juenger is a multidisciplinary conceptual artist working out of Southern Illinois.
-          Her work embodies loneliness, loss, death, trauma, sex, and the body.
-        </p>
-        <p class="lede">
-          This page holds the longer version, so the home page can stay lighter and the work can breathe.
+          Her work embodies loneliness, loss, death, trauma, sex and the body.
         </p>
         <div class="actions">
           <a class="button" href="index.html">Back to portfolio</a>
           <a class="button alt" href="mailto:Carrie.juenger@gmail.com">Contact Carrie</a>
         </div>
       </div>
-      <div class="hero-media" aria-label="Portraits of Carrie Juenger">
+      <div class="hero-media">
         <figure class="portrait">
           <img src="assets/images/bio/carrie-bio-portrait-glasses.jpg" alt="Carrie Juenger portrait with black glasses" loading="lazy" decoding="async" />
-        </figure>
-        <figure class="portrait">
-          <img src="assets/images/bio/carrie-bio-portrait-green.jpg" alt="Carrie Juenger portrait with green hair and tiara" loading="lazy" decoding="async" />
-        </figure>
-        <figure class="portrait">
-          <img src="assets/images/bio/carrie-bio-portrait-mask.jpg" alt="Carrie Juenger portrait with facial bandages" loading="lazy" decoding="async" />
         </figure>
       </div>
     </section>
@@ -266,66 +216,24 @@
         <div class="bio-card">
           <p>
             Carrie Juenger is a multidisciplinary conceptual artist working out of Southern Illinois.
-            Her work embodies loneliness, loss, death, trauma, sex, and the body.
+            Her work embodies loneliness, loss, death, trauma, sex and the body.
           </p>
           <p>
-            Her photography is both deeply personal and emotionally charged. She uses the form to communicate
-            complex concepts and feelings, with work that draws on themes such as how one feels in their skin,
-            the death of a loved one, partnership, and psychic wounds.
+            The photography that she produces is both deeply personal and emotionally charged, using her form to
+            communicate complex concepts and feelings. This work explores accessible themes such as how one feels
+            in their skin, the death of a loved one, partnership and psychic wounds.
           </p>
           <p>
-            Her video work uses animal symbolism and voiceover from original writing to convey trauma, specifically
-            loss of virginity, childhood divorce, and marital turmoil. These short films were featured in regional
-            film festivals, and <em>Crabs in a Dollhouse</em> exhibited in Belarus, Eastern Europe.
+            Her video work utilizes animal symbolism and voiceover of original writing to convey trauma — specifically
+            loss of virginity, childhood divorce and marital turmoil. These short films have been featured in regional
+            film festivals, including one exhibition in Belarus (Eastern Europe).
           </p>
           <p>
-            She exercises her skill in collage by making flyers for events and work for local zines. She ran five
-            issues of an art and poetry zine titled <em>City Litter</em>, which was distributed through mail and at
-            The Small Press Expo in St. Louis. She is currently working on a new zine titled <em>Fruits of Lunacy</em>.
-          </p>
-          <p class="note">
-            For the homepage, this biography is condensed into a shorter statement. This page keeps the full version
-            visible and easy to update.
+            Carrie&rsquo;s work can be found in multiple issues of local art and poetry zines. She promotes local artists
+            by creating flyers by hand and has been featured at The Small Press Expo in St. Louis, Missouri. She
+            continues her work with her newest zine titled &lsquo;Fruits of Luncacy&rsquo;.
           </p>
         </div>
-        <div class="bio-card">
-          <p>
-            Selected portrait images are shown here as a simple introduction to the work and presence behind it.
-          </p>
-          <div class="note">
-            If you want, I can later add a CV, press section, or separate statement page without changing the home page.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-head">
-        <h2>Portraits</h2>
-        <div class="muted">Three photos from the current set</div>
-      </div>
-      <div class="gallery">
-        <article class="card">
-          <img src="assets/images/bio/carrie-bio-portrait-green.jpg" alt="Carrie Juenger with green hair and a tiara" loading="lazy" decoding="async" />
-          <div class="meta">
-            <h3>Portrait 01</h3>
-            <p>Green hair, tiara, black background</p>
-          </div>
-        </article>
-        <article class="card">
-          <img src="assets/images/bio/carrie-bio-portrait-mask.jpg" alt="Carrie Juenger with facial bandages in warm light" loading="lazy" decoding="async" />
-          <div class="meta">
-            <h3>Portrait 02</h3>
-            <p>Bandaged face, direct light</p>
-          </div>
-        </article>
-        <article class="card">
-          <img src="assets/images/bio/carrie-bio-portrait-glasses.jpg" alt="Carrie Juenger wearing glasses in front of artwork" loading="lazy" decoding="async" />
-          <div class="meta">
-            <h3>Portrait 03</h3>
-            <p>Glasses, velvet dress, gallery wall</p>
-          </div>
-        </article>
       </div>
     </section>
   </main>
