@@ -165,11 +165,6 @@
       gap: 26px;
       align-items: start;
     }
-    .about-box {
-      background: var(--paper);
-      border: 1px solid var(--line);
-      padding: 22px;
-    }
     .video-frame {
       border: 1px solid var(--line);
       background: #111;
@@ -190,7 +185,7 @@
       background: var(--paper);
       border: 1px solid var(--line);
     }
-    .video-still img { aspect-ratio: 1 / 1; object-fit: cover; }
+    .video-still img { width: 100%; height: auto; display: block; }
     footer {
       border-top: 1px solid var(--line);
       color: var(--muted);
@@ -217,7 +212,6 @@
         <a href="#collage">Collage</a>
         <a href="#installation">Installation</a>
         <a href="#video">Video Work</a>
-        <a href="#about">About</a>
         <a href="mailto:Carrie.juenger@gmail.com">Contact</a>
       </nav>
     </div>
@@ -311,26 +305,8 @@
         <div class="video-stack">
           <div class="video-frame">
             <iframe
-              src="https://player.vimeo.com/video/186519774?title=0&byline=0&portrait=0"
-              title="Carrie Juenger video"
-              loading="lazy"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="video-frame">
-            <iframe
-              src="https://player.vimeo.com/video/77047749?title=0&byline=0&portrait=0"
-              title="Carrie Juenger video 2"
-              loading="lazy"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="video-frame">
-            <iframe
               src="https://player.vimeo.com/video/33646118?title=0&byline=0&portrait=0"
-              title="Carrie Juenger video 3"
+              title="Crabs in a Dollhouse"
               loading="lazy"
               allow="autoplay; fullscreen; picture-in-picture"
               allowfullscreen
@@ -338,30 +314,9 @@
           </div>
         </div>
         <article class="video-still">
-          <img src="assets/images/video/daddys-girl-still-2017.jpg" alt="Still from Daddy's Girl, 2017" loading="lazy" decoding="async" />
-          <div class="meta"><h3>Still from &ldquo;Daddy&rsquo;s Girl&rdquo; 2017</h3><p>Video still</p></div>
+          <img src="assets/images/video/daddys-girl-still-2017-v2.jpg" alt="Daddy's Girl, 2017" loading="lazy" decoding="async" />
+          <div class="meta"><h3>Daddy&rsquo;s Girl</h3><p>Video still</p></div>
         </article>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="section-head">
-        <h2>About</h2>
-      </div>
-      <div class="about">
-        <div class="hero-image">
-          <img src="assets/images/photography/web/ballgag.jpg" alt="Ballgag" loading="lazy" decoding="async" />
-        </div>
-        <div class="about-box">
-          <p>
-            Carrie Juenger is a multidisciplinary conceptual artist working out of Southern Illinois. Her work embodies
-            loneliness, loss, death, trauma, sex, and the body.
-          </p>
-          <p>
-            Her full biography now lives on a dedicated page, so the homepage can stay lean.
-          </p>
-          <a class="button" href="bio.html">Open bio page</a>
-        </div>
       </div>
     </section>
   </main>
